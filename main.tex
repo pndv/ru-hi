@@ -1,0 +1,65 @@
+\documentclass{book}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage[main=hindi,russian,english]{babel}
+\babelfont[hindi]{rm}{Nirmala UI}
+\babelfont[russian]{rm}{Segoe UI}
+% \babelprovide[import, onchar=ids fonts]{russian}
+
+\NewDocumentCommand {\ru}{+m}{\foreignlanguage{russian}{#1}}
+\NewDocumentCommand {\ruit}{+m}{\foreignlanguage{russian}{\textit{#1}}}
+
+\begin{document}
+
+\chapter{रूसी वर्णमाला}
+
+\begin{tabularx}{250pt}{|c|c|c|X|}
+	\ru{А} & \ru{а} & \ruit{а} & अ  \\
+	\ru{Б} & \ru{б} & \ruit{б} & ब \\ 
+	\ru{В} & \ru{в} & \ruit{в} & व 	\\
+	\ru{Г} & \ru{г} & \ruit{г} & ग \\
+	\ru{Д} & \ru{д} & \ruit{д} & ड  \\
+	\ru{Е} & \ru{е} & \ruit{е} & येह् \\ 
+	\ru{Ё} & \ru{ё} & \ruit{ё} & यो \\ 
+	\ru{Ж} & \ru{ж} & \ruit{ж} & ज़ की तरह, जैसे अंग्रेजी भाषा मे \textit{treasure}/\textit{ट्रेज़र} का ज़ होता है \\
+	\ru{З} & \ru{з} & \ruit{з} & ज़ \\ 
+	\ru{И} & \ru{и} & \ruit{и} & इ \\
+	\ru{Й} & \ru{й} & \ruit{й} & य \\ 
+	\ru{К} & \ru{к} & \ruit{к} & क \\
+	\ru{Л} & \ru{л} & \ruit{л} & ल \\
+	\ru{М} & \ru{м} & \ruit{м} & म \\
+	\ru{Н} & \ru{н} & \ruit{н} & ह \\
+	\ru{О} & \ru{о} & \ruit{о} & ओ \\
+	\ru{П} & \ru{п} & \ruit{п} & प \\
+	\ru{Р} & \ru{р} & \ruit{р} & र \\ 
+	\ru{С} & \ru{с} & \ruit{с} & स \\ 
+	\ru{Т} & \ru{т} & \ruit{т} & ट \\ 
+	\ru{У} & \ru{у} & \ruit{у} & उ \\ 
+	\ru{Ф} & \ru{ф} & \ruit{ф} & फ \\
+	\ru{Х} & \ru{х} & \ruit{х} & ख \\ 
+	\ru{Ц} & \ru{ц} & \ruit{ц} & त्स \\
+	\ru{Ч} & \ru{ч} & \ruit{ч} & च \\
+	\ru{Ш} & \ru{ш} & \ruit{ш} & श  \\ 
+	\ru{Щ} & \ru{щ} & \ruit{щ} & ष  \\
+	\ru{Ъ} & \ru{ъ} & \ruit{ъ} & इसका कोई अलग से उच्चारण नहीं है, यह जिस अक्षर के आगे लगता है उस पर थोड़ा जोर देना होता है।  यों समझिए जैसे बड़ी मात्रा हो उस अक्षर पर ।  \\
+	\ru{Ы} & \ru{ы} & \ruit{ы} & एss [उच्चारण के लिए यह विडिओ देखिए] \\
+	\ru{Ь} & \ru{ь} & \ruit{ь} & यह हलंत का चिन्ह है । इसका भी अलग से उच्चारण नहीं है । \\ 
+	\ru{Э} & \ru{э} & \ruit{э} & ए \\ 
+	\ru{Ю} & \ru{ю} & \ruit{ю} & यू 	\\ 
+	\ru{Я} & \ru{я} & \ruit{я} & या \\
+\end{tabularx}
+
+
+
+
+\chapter{कारक}
+
+\section{कर्म} 
+\section{करण} 
+\section{संप्रदान} 
+\section{अधिकरण} 
+\section{अपादान} 
+
+
+\end{document}
