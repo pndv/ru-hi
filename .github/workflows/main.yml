@@ -28,7 +28,7 @@ jobs:
           echo "Updating the OS"
           sudo apt update -y
           echo "Upgrading the OS"
-          sudo apt upgrade -y
+          sudo apt-get upgrade -y
           
       # Runs a set of commands using the runners shell
       - name: Install MikTex
