@@ -1,0 +1,56 @@
+﻿# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+      # Runs a single command using the runners shell
+      - name: Update / upgrade the O/S
+        run: |
+          echo "Updating the OS"
+          sudo apt update -y
+          echo "Upgrading the OS"
+          sudo apt upgrade -y
+          
+
+      # Runs a set of commands using the runners shell
+      - name: Install MikTex
+        run: |
+          echo "Registering GPG key for MikTex repo"
+          sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
+          echo "Registering installation source..."
+          echo "deb http://miktex.org/download/ubuntu focal universe" | sudo tee /etc/apt/sources.list.d/miktex.list
+          echo "Installing MikTex..."
+          sudo apt install miktex -y
+          
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Create auxillary and output directory for LaTeX
+      - name: Create aux/out directories
+        run: mkdir out
+        
+      # Build LaTeX file
+      - name: Running XeLatex
+        run: xelatex -file-line-error -interaction=nonstopmode -synctex=1 -output-directory=out -aux-directory=out main.tex
+
