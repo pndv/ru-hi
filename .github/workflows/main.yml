@@ -22,15 +22,32 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Update / upgrade the O/S
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo "Updating the OS"
+          sudo apt update -y
+          echo "Upgrading the OS"
+          sudo apt upgrade -y
+          
+      # Runs a set of commands using the runners shell
+      - name: Install MikTex
+        run: |
+          echo "Registering GPG key for MikTex repo"
+          sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
+          echo "Registering installation source..."
+          echo "deb http://miktex.org/download/ubuntu focal universe" | sudo tee /etc/apt/sources.list.d/miktex.list
+          echo "Installing MikTex..."
+          sudo apt install miktex -y
+          
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Create auxillary and output directory for LaTeX
+      - name: Create aux/out directories
+        run: mkdir out
+        
+      # Build LaTeX file
+      - name: Running XeLatex
+        run: xelatex -file-line-error -interaction=nonstopmode -synctex=1 -output-directory=out -aux-directory=out main.tex
