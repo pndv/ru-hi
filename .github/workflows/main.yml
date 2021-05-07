@@ -36,6 +36,14 @@ jobs:
       
       - name: Updating path
         run: eval "$(/usr/libexec/path_helper)"
+
+      - name: Debug actions
+        run: |
+          echo "Current Path is ${PATH}"
+          echo "Environment variables"
+          env
+          echo "Finding xelatex"
+          sudo find / -name '*tex*' -type f
           
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
