@@ -274,3 +274,9 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# JetBrains configuration files
+.idea
+.run
+biber-working-dir
+main.pdf
