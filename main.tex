@@ -1,23 +1,23 @@
-%!TEX program = xelatex
-!\documentclass{book}
+\documentclass{book}
 
 \usepackage{ltablex}
 \usepackage[colorlinks=true,
     urlcolor=blue,
     linkcolor=red,
     unicode=true]{hyperref}
-\usepackage{xparse}
 \usepackage[backend=biber]{biblatex}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[main=hindi,russian,english, sanskrit]{babel}
-\usepackage{xcolor}
+\usepackage[main=hindi,russian,english]{babel}
 \usepackage{imakeidx}
-\usepackage{fontspec}
+\usepackage{xcolor}   % Compiler recommended to load package
+\usepackage{fontspec} % Compiler recommended to load package
+\usepackage{csquotes} % Compiler recommended to load package
+\usepackage{xparse}   % Compiler recommended to load package
 
 %
-%\babelfont[hindi]{rm}{Nirmala UI}
-%\babelfont[russian]{rm}{Segoe UI}
+\babelfont[hindi]{rm}{Nirmala UI}
+\babelfont[russian]{rm}{Segoe UI}
 
 \makeindex[columns=2, title=वर्णक्रमानुसार सूची, intoc]
 
