@@ -19,16 +19,16 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-18.04
     container:
-      image: texlive/texlive:latest
-      credentials:
-        username: ${{ secrets.DOCKER_HUB_USERNAME }}
-        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+      image: docker.pkg.github.com/pndv/tex-docker/texlive-fedora-docker:1.0
+    #      credentials:
+    #        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+    #        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
         uses: actions/checkout@v2
-        with: 
+        with:
           ref: ${{ github.head_ref }}
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -63,11 +63,11 @@ jobs:
         run: xelatex --admin -file-line-error -interaction=nonstopmode -synctex=1 main.tex
         continue-on-error: true # todo: check why it's failing
 
-      - name: Copy the PDF file to 'pages' folder
-        run: cp main.pdf pages
-
-      - name: Commit and push the file
-        run: |
-          git add --force pages/main.pdf
-          git commit -m "Add PDF file"
-          git push
+# todo: Put this section in the release part#      - name: Copy the PDF file to 'pages' folder
+#        run: cp main.pdf pages
+#
+#      - name: Commit and push the file
+#        run: |
+#          git add --force pages/main.pdf
+#          git commit -m "Add PDF file"
+#          git push
