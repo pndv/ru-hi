@@ -25,26 +25,25 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Change working directory to home
-        run: cd /home
-
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
         uses: actions/checkout@v2
+        with: 
+          ref: ${{ github.head_ref }}
 
-      # Create auxiliary and output directory for LaTeX
-      - name: Create aux/out directories
-        run: mkdir out
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Set git configuration
+        run: | 
+          git config --global user.name pndv
+          git config --global user.email ${{ secrets.GH_USER_EMAIL }}
+          git config --global pull.rebase true
+          git fetch --all
+
 
       # Build LaTeX file
       - name: Running XeLaTeX
         run: xelatex --admin -file-line-error -interaction=nonstopmode -synctex=1 main.tex
         continue-on-error: true # First time there will be errors/warnings related to BibTeX etc.
-
-      #      - name: Print log
-#        run: |
-#          cat /miktex/.miktex/texmfs/data/miktex/log/xelatex.log
-#          cat /miktex/.miktex/texmfs/data/miktex/log/initexmf.log
 
       # Build BibLaTeX
       - name: Running Biber
@@ -64,5 +63,11 @@ jobs:
         run: xelatex --admin -file-line-error -interaction=nonstopmode -synctex=1 main.tex
         continue-on-error: true # todo: check why it's failing
 
+      - name: Copy the PDF file to 'pages' folder
+        run: cp main.pdf pages
 
-
+      - name: Commit and push the file
+        run: |
+          git add --force pages/main.pdf
+          git commit -m "Add PDF file"
+          git push
