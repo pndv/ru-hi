@@ -279,4 +279,4 @@ TSWLatexianTemp*
 .idea
 .run
 biber-working-dir
-main.pdf
+**/main.pdf
