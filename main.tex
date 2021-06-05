@@ -1,29 +1,40 @@
 \documentclass{book}
 
 \usepackage{ltablex}
+\usepackage{booktabs} % for \toprule \midrule \bottomrule in tables
+\usepackage[backend=biber,
+    style=numeric]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,russian,hindi]{babel} % last language in the entry is treated as the main language
+\usepackage{imakeidx}
+\usepackage{xparse}
+\usepackage{xcolor}   % Compiler recommended to load package
+\usepackage{fontspec} % Compiler recommended to load package
+\usepackage{csquotes} % Compiler recommended to load package
+\usepackage{graphics} % Compiler recommended to load package
+\usepackage{graphicx}
+% hyperref doc: Make sure it comes last of your loaded packages, to give it a fighting chance of not being over-written
 \usepackage[colorlinks=true,
     urlcolor=blue,
     linkcolor=red,
     unicode=true]{hyperref}
-\usepackage[backend=biber]{biblatex}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[main=hindi,russian,english]{babel}
-\usepackage{imakeidx}
-\usepackage{xcolor}   % Compiler recommended to load package
-\usepackage{fontspec} % Compiler recommended to load package
-\usepackage{csquotes} % Compiler recommended to load package
-\usepackage{xparse}   % Compiler recommended to load package
 
-%
-\babelfont[hindi]{rm}{Nirmala UI}
-\babelfont[russian]{rm}{Segoe UI}
+
+\graphicspath{{graphics}}
+
+\DeclareLanguageMapping{hindi}{hindi-ext}
+
+
+\babelfont[hindi]{rm}{Aparajita}
+\babelfont[russian]{rm}{Arial}
 
 \makeindex[columns=2, title=वर्णक्रमानुसार सूची, intoc]
 
 \NewDocumentCommand {\ru}{+m}{\foreignlanguage{russian}{#1}}
 \NewDocumentCommand {\ruit}{+m}{\foreignlanguage{russian}{\textit{#1}}}
-\NewDocumentCommand{\rusmalld}{}{\fontspec{Lucida Calligraphy} \selectfont \textit{g}}
+\NewDocumentCommand {\rucursive}{+m}{\fontspec{Wolgast Two} \selectfont \foreignlanguage{russian}{#1}}
+\NewExpandableDocumentCommand {\sru}{+m}{\texorpdfstring{\foreignlanguage{russian}{#1}}{#1}}
 
 \addbibresource{bibliography.bib}
 
@@ -33,12 +44,13 @@
 \title{हिन्दी भाषियों के लिए रूसी अध्यन}
 \author{Vinay Pandey}
 
-\includeonly{chapters/intro}
+\includeonly{chapters/intro.tex, chapters/cases.tex, chapters/noun.tex}
 
 \begin{document}
 
     \maketitle
     \tableofcontents
+    \listoffigures
 
     \include{chapters/intro}
     \include{chapters/noun}
@@ -46,6 +58,6 @@
     \include{chapters/tenses}
     \include{chapters/cases}
 
-    \printbibliography
+    \printbibliography[title={References},heading=bibintoc]
     \printindex
 \end{document}
