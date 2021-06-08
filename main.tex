@@ -20,14 +20,12 @@
     linkcolor=red,
     unicode=true]{hyperref}
 
-
 \graphicspath{{graphics}}
 
 \DeclareLanguageMapping{hindi}{hindi-ext}
-
-
 \babelfont[hindi]{rm}{Aparajita}
 \babelfont[russian]{rm}{Arial}
+\addbibresource{bibliography.bib}
 
 \makeindex[columns=2, title=वर्णक्रमानुसार सूची, intoc]
 
@@ -36,28 +34,31 @@
 \NewDocumentCommand {\rucursive}{+m}{\fontspec{Wolgast Two} \selectfont \foreignlanguage{russian}{#1}}
 \NewExpandableDocumentCommand {\sru}{+m}{\texorpdfstring{\foreignlanguage{russian}{#1}}{#1}}
 
-\addbibresource{bibliography.bib}
-
 % Used for tabularx package to put some gap between text and row heights 
 \renewcommand{\arraystretch}{1.5}
 
 \title{हिन्दी भाषियों के लिए रूसी अध्यन}
 \author{Vinay Pandey}
 
-\includeonly{chapters/intro.tex, chapters/cases.tex, chapters/noun.tex}
+\includeonly{chapters/intro/intro.tex,
+    chapters/cases/cases.tex,
+    chapters/noun.tex}
 
 \begin{document}
 
+    \frontmatter % Start frontal matter of book with roman numbering
     \maketitle
     \tableofcontents
     \listoffigures
 
-    \include{chapters/intro}
+    \mainmatter % Start main contents of book with arabic numerals
+    \include{chapters/intro/intro}
     \include{chapters/noun}
     \include{chapters/pronoun}
     \include{chapters/tenses}
-    \include{chapters/cases}
+    \include{chapters/cases/cases}
 
-    \printbibliography[title={References},heading=bibintoc]
+    \backmatter % Start entries at the back of the book
+    \printbibliography[title={संदर्भसूची},heading=bibintoc]
     \printindex
 \end{document}
