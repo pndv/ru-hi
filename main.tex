@@ -4,8 +4,6 @@
 \usepackage{booktabs} % for \toprule \midrule \bottomrule in tables
 \usepackage[backend=biber,
     style=numeric]{biblatex}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage[english,russian,hindi]{babel} % last language in the entry is treated as the main language
 \usepackage{imakeidx}
 \usepackage{xparse}
@@ -14,6 +12,7 @@
 \usepackage{csquotes} % Compiler recommended to load package
 \usepackage{graphics} % Compiler recommended to load package
 \usepackage{graphicx}
+\usepackage{listofitems} % For setsepchar and readlist in function gencasetable
 % hyperref doc: Make sure it comes last of your loaded packages, to give it a fighting chance of not being over-written
 \usepackage[colorlinks=true,
     urlcolor=blue,
@@ -22,17 +21,63 @@
 
 \graphicspath{{graphics}}
 
+\babelfont[*devanagari]{rm}{Aparajita} % `*` = For all Devanagari scripts, use Aparajita
+\babelfont[*cyrillic]{rm}{Arial} % `*` = For all Cyrillic scripts, use Arial
+
+
 \DeclareLanguageMapping{hindi}{hindi-ext}
-\babelfont[hindi]{rm}{Aparajita}
-\babelfont[russian]{rm}{Arial}
 \addbibresource{bibliography.bib}
 
 \makeindex[columns=2, title=वर्णक्रमानुसार सूची, intoc]
 
+\NewExpandableDocumentCommand {\sru}{+m}{\texorpdfstring{\foreignlanguage{russian}{#1}}{#1}}
 \NewDocumentCommand {\ru}{+m}{\foreignlanguage{russian}{#1}}
 \NewDocumentCommand {\ruit}{+m}{\foreignlanguage{russian}{\textit{#1}}}
-\NewDocumentCommand {\rucursive}{+m}{\fontspec{Wolgast Two} \selectfont \foreignlanguage{russian}{#1}}
-\NewExpandableDocumentCommand {\sru}{+m}{\texorpdfstring{\foreignlanguage{russian}{#1}}{#1}}
+\NewDocumentCommand {\ruscursive}{+m}{\fontspec{Wolgast Two} \selectfont \foreignlanguage{russian}{#1}}
+\NewDocumentCommand {\gencasetable}{+m}
+{
+% First entry in list = table caption
+% Second entry in list = table label
+% Subsequent entries  = list of ; separated table entries
+    \setsepchar{;}
+    \readlist\z{#1}
+
+
+    \begin{tabularx} {\linewidth} { X X X }
+        \caption{\z[1]}\label{\z[2]}\tabularnewline
+        \toprule
+
+        \textbf{कारक} & \textbf{एकवचन} & \textbf{बहुवचन} \tabularnewline
+        \midrule
+        \endfirsthead
+
+        \midrule
+        \textbf{कारक} & \textbf{एकवचन} & \textbf{बहुवचन} \tabularnewline
+        \midrule
+        \endhead
+
+        \midrule
+        \multicolumn{3}{r}{\footnotesize{अगले पृष्ट पर जारी}}
+        \endfoot
+
+        \bottomrule
+        \multicolumn{3}{r}{\footnotesize{इति तालिका~\ref{\z[2]} }} \tabularnewline
+        \endlastfoot
+
+        कर्ता      & \foreignlanguage{russian}{\z[3]} & \foreignlanguage{russian}{\z[4]}
+        \tabularnewline
+        कर्म      & \foreignlanguage{russian}{\z[5]} & \foreignlanguage{russian}{\z[6]}
+        \tabularnewline
+        संबंध     & \foreignlanguage{russian}{\z[7]} & \foreignlanguage{russian}{\z[8]}
+        \tabularnewline
+        संप्रदान    & \foreignlanguage{russian}{\z[9]} & \foreignlanguage{russian}{\z[10]}
+        \tabularnewline
+        अधिकरण  & \foreignlanguage{russian}{\z[11]} & \foreignlanguage{russian}{\z[12]}
+        \tabularnewline
+        करण     & \foreignlanguage{russian}{\z[13]} & \foreignlanguage{russian}{\z[14]}
+
+    \end{tabularx}
+}
 
 % Used for tabularx package to put some gap between text and row heights 
 \renewcommand{\arraystretch}{1.5}
@@ -61,4 +106,5 @@
     \backmatter % Start entries at the back of the book
     \printbibliography[title={संदर्भसूची},heading=bibintoc]
     \printindex
+
 \end{document}
