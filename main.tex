@@ -43,38 +43,38 @@
     \readlist\z{#1}
 
 
-    \begin{tabularx} {\linewidth} { X X X }
+    \begin{tabularx} {\linewidth} { X X X X }
         \caption{\z[1]}\label{\z[2]}\tabularnewline
         \toprule
 
-        \textbf{कारक} & \textbf{एकवचन} & \textbf{बहुवचन} \tabularnewline
+        \textbf{कारक} & \textbf{\foreignlanguage{russian}{падеж}} & \textbf{एकवचन} & \textbf{बहुवचन} \tabularnewline
         \midrule
         \endfirsthead
 
         \midrule
-        \textbf{कारक} & \textbf{एकवचन} & \textbf{बहुवचन} \tabularnewline
+        \textbf{कारक} & \textbf{\foreignlanguage{russian}{падеж}} & \textbf{एकवचन} & \textbf{बहुवचन} \tabularnewline
         \midrule
         \endhead
 
         \midrule
-        \multicolumn{3}{r}{\footnotesize{अगले पृष्ट पर जारी}}
+        \multicolumn{4}{r}{\footnotesize{अगले पृष्ट पर जारी}}
         \endfoot
 
         \bottomrule
-        \multicolumn{3}{r}{\footnotesize{इति तालिका~\ref{\z[2]} }} \tabularnewline
+        \multicolumn{4}{r}{\footnotesize{इति तालिका~\ref{\z[2]} }} \tabularnewline
         \endlastfoot
 
-        कर्ता      & \foreignlanguage{russian}{\z[3]} & \foreignlanguage{russian}{\z[4]}
+        कर्ता & \foreignlanguage{russian}{именительный} & \foreignlanguage{russian}{\z[3]} & \foreignlanguage{russian}{\z[4]}
         \tabularnewline
-        कर्म      & \foreignlanguage{russian}{\z[5]} & \foreignlanguage{russian}{\z[6]}
+        कर्म & \foreignlanguage{russian}{винительный} & \foreignlanguage{russian}{\z[5]} & \foreignlanguage{russian}{\z[6]}
         \tabularnewline
-        संबंध     & \foreignlanguage{russian}{\z[7]} & \foreignlanguage{russian}{\z[8]}
+        संबंध & \foreignlanguage{russian}{Предложный} & \foreignlanguage{russian}{\z[7]} & \foreignlanguage{russian}{\z[8]}
         \tabularnewline
-        संप्रदान    & \foreignlanguage{russian}{\z[9]} & \foreignlanguage{russian}{\z[10]}
+        संप्रदान & \foreignlanguage{russian}{Дательный} & \foreignlanguage{russian}{\z[9]} & \foreignlanguage{russian}{\z[10]}
         \tabularnewline
-        अधिकरण  & \foreignlanguage{russian}{\z[11]} & \foreignlanguage{russian}{\z[12]}
+        अधिकरण & \foreignlanguage{russian}{Родительный} & \foreignlanguage{russian}{\z[11]} & \foreignlanguage{russian}{\z[12]}
         \tabularnewline
-        करण     & \foreignlanguage{russian}{\z[13]} & \foreignlanguage{russian}{\z[14]}
+        करण & \foreignlanguage{russian}{Творительный} & \foreignlanguage{russian}{\z[13]} & \foreignlanguage{russian}{\z[14]}
 
     \end{tabularx}
 }
@@ -85,9 +85,11 @@
 \title{हिन्दी भाषियों के लिए रूसी अध्यन}
 \author{Vinay Pandey}
 
-\includeonly{chapters/intro/intro.tex,
-    chapters/cases/cases.tex,
-    chapters/nouns/nouns.tex}
+\includeonly{
+%    chapters/intro/intro.tex,
+%    chapters/cases/cases.tex,
+    chapters/nouns/nouns.tex
+}
 
 \begin{document}
 
@@ -95,10 +97,11 @@
     \maketitle
     \tableofcontents
     \listoffigures
+    \listoftables
 
     \mainmatter % Start main contents of book with arabic numerals
     \include{chapters/intro/intro}
-    \include{chapters/noun}
+    \include{chapters/nouns/nouns}
     \include{chapters/pronoun}
     \include{chapters/tenses}
     \include{chapters/cases/cases}
