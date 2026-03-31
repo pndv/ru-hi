@@ -1,0 +1,43 @@
+#import "../../template.typ": *
+
+== वर्णमाला <sec:intro-alpha-list>
+#figure(
+  table(
+  columns: (1fr, 1fr, 1fr, 1fr, 1fr, 2fr),
+  [*बड़ी लिपि*], [*छोटी लिपि*], [*Italics*], [*Big Cursive*], [*Small Cursive*], [*हिन्दी उच्चारण*],
+  [А], [а], [_а_], [#ruscursive[А]], [#ruscursive[а]], [अ],
+  [Б], [б], [_б_], [#ruscursive[Б]], [#ruscursive[б]], [ब],
+  [В], [в], [_в_], [#ruscursive[В]], [#ruscursive[в]], [व],
+  [Г], [г], [_г_], [#ruscursive[Г]], [#ruscursive[г]], [ग],
+  [Д], [д], [_д_], [#ruscursive[Д]], [#ruscursive[д]], [ड],
+  [Е], [е], [_е_], [#ruscursive[Е]], [#ruscursive[е]], [येह्],
+  [Ё], [ё], [_ё_], [#ruscursive[Ё]], [#ruscursive[ё]], [यो],
+  [Ж], [ж], [_ж_], [#ruscursive[Ж]], [#ruscursive[ж]], [क्ज़, अंग्रेजी भाषा के _tre#underline[asu]re_/_ट्रेज़र_ के ज़ कि भांति],
+  [З], [з], [_з_], [#ruscursive[З]], [#ruscursive[з]], [ज़],
+  [И], [и], [_и_], [#ruscursive[И]], [#ruscursive[и]], [इ],
+  [Й], [й], [_й_], [#ruscursive[Й]], [#ruscursive[й]], [य],
+  [К], [к], [_к_], [#ruscursive[К]], [#ruscursive[к]], [क],
+  [Л], [л], [_л_], [#ruscursive[Л]], [#ruscursive[л]], [ल],
+  [М], [м], [_м_], [#ruscursive[М]], [#ruscursive[м]], [म],
+  [Н], [н], [_н_], [#ruscursive[Н]], [#ruscursive[н]], [ह],
+  [О], [о], [_о_], [#ruscursive[О]], [#ruscursive[о]], [ओ],
+  [П], [п], [_п_], [#ruscursive[П]], [#ruscursive[п]], [प],
+  [Р], [р], [_р_], [#ruscursive[Р]], [#ruscursive[р]], [र],
+  [С], [с], [_с_], [#ruscursive[С]], [#ruscursive[с]], [स],
+  [Т], [т], [_т_], [#ruscursive[Т]], [#ruscursive[т]], [ट],
+  [У], [у], [_у_], [#ruscursive[У]], [#ruscursive[у]], [उ],
+  [Ф], [ф], [_ф_], [#ruscursive[Ф]], [#ruscursive[ф]], [फ],
+  [Х], [х], [_х_], [#ruscursive[Х]], [#ruscursive[х]], [ख],
+  [Ц], [ц], [_ц_], [#ruscursive[Ц]], [#ruscursive[ц]], [त्स],
+  [Ч], [ч], [_ч_], [#ruscursive[Ч]], [#ruscursive[ч]], [च],
+  [Ш], [ш], [_ш_], [#ruscursive[Ш]], [#ruscursive[ш]], [श],
+  [Щ], [щ], [_щ_], [#ruscursive[Щ]], [#ruscursive[щ]], [ष],
+  [Ъ], [ъ], [_ъ_], [#ruscursive[Ъ]], [#ruscursive[ъ]], [~@subsubsec:alpha-pronounce-special-char-hard भाग देखिए],
+  [Ы], [ы], [_ы_], [#ruscursive[Ы]], [#ruscursive[ы]], [~@subsubsec:alpha-pronounce-special-char-oui भाग देखिए],
+  [Ь], [ь], [_ь_], [#ruscursive[Ь]], [#ruscursive[ь]], [@subsubsec:alpha-pronounce-special-char-soft भाग देखिए],
+  [Э], [э], [_э_], [#ruscursive[Э]], [#ruscursive[э]], [ए],
+  [Ю], [ю], [_ю_], [#ruscursive[Ю]], [#ruscursive[ю]], [यू],
+  [Я], [я], [_я_], [#ruscursive[Я]], [#ruscursive[я]], [या]
+),
+  caption: [वर्णमाला],
+) <tab:alphabet>
