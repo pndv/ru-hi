@@ -1,0 +1,69 @@
+#let project(title: "", author: "", body) = {
+  set document(title: title, author: author)
+  set page(
+    paper: "a4",
+    margin: (inside: 2.5cm, outside: 2cm, y: 2cm),
+    numbering: "i",
+    number-align: center,
+  )
+  set text(font: ("Aparajita", "Arial"), lang: "hi", region: "IN")
+  set heading(numbering: "1.1")
+
+  show regex("[\p{Cyrillic}\u0301\u0300]+"): set text(lang: "ru")
+
+  // Title page
+  align(center + horizon)[
+    #block(text(weight: 700, 2.5em, title))
+    #v(2em)
+    #block(text(weight: 400, 1.5em, author))
+  ]
+  pagebreak()
+
+  // Table of contents
+  outline(depth: 3, indent: true)
+  pagebreak()
+  
+  // List of figures and tables
+  outline(kind: image, title: "List of Figures")
+  pagebreak()
+  outline(kind: table, title: "List of Tables")
+  pagebreak()
+
+  set page(numbering: "1")
+  counter(page).update(1)
+
+  body
+}
+
+#let ruscursive(content) = {
+  // Use a cursive font if available, otherwise it falls back correctly.
+  set text(font: ("Wolgast Two", "Arial"), lang: "ru")
+  content
+}
+
+#let gencasetable(caption, label, ..entries) = {
+  let rows = entries.pos()
+  // If entries were passed as a single string with semicolons (like in LaTeX)
+  if rows.len() == 1 and rows.at(0).contains(";") {
+    rows = rows.at(0).split(";").map(it => it.trim())
+  }
+  
+  figure(
+    table(
+      columns: (1fr, 1fr, 1fr, 1fr),
+      inset: 10pt,
+      align: (left, left, left, left),
+      table.header(
+        [*कारक*], [*पादेय्ज़ (падеж)*], [*एकवचन*], [*बहुवचन*]
+      ),
+      [कर्ता], [इमेनितेल्नीय (именительный)], rows.at(0), rows.at(1),
+      [कर्म], [विनीतेल्नीय (винительный)], rows.at(2), rows.at(3),
+      [संबंध], [प्रेद्लोज़्नीय (Предложный)], rows.at(4), rows.at(5),
+      [संप्रदान], [दातेल्नीय (Дательный)], rows.at(6), rows.at(7),
+      [अधिकरण], [रोदीतेल्नीय (Родительный)], rows.at(8), rows.at(9),
+      [करण], [त्वोरीतेल्नीय (Творительный)], rows.at(10), rows.at(11),
+    ),
+    caption: caption,
+  )
+  label(label)
+}
