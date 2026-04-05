@@ -5,7 +5,7 @@
 रूप भिन्न हो जाते हैं~@readyruss2021।
 
 === कठोर-अंत पुलिंग शब्दों का रूप (निर्जीव वस्तु) <subsec:noun-endings-first-declension-hard-inanimate-male>
-#gencasetable("р-कारांत संज्ञा 
+#genCaseTable("р-कारांत संज्ञा
 
 теа́тр = रंगमंच, थिएटर (theatre)", "tab:noun-endings-first-declension-hard-inanimate-male", "теа́тр", "теа́тры", "теа́тр", "теа́тры", "теа́тра", "теа́тров", "теа́тре", "теа́трых", "теа́тру", "теа́трам", "теа́тром", "теа́трами")
 इसी प्रकार: стака́н (गिलास)
@@ -15,16 +15,16 @@
 === कठोर-अंत पुलिंग शब्दों का रूप (सजीव वस्तु) <subsec:noun-endings-first-declension-hard-animate-male>
 ма́льчик = बालक
 
-#gencasetable("к-कारांत संज्ञा", "tab:noun-endings-first-declension-hard-animate-male", "ма́льчик", "ма́льчикы", "ма́льчика", "ма́льчиков", "ма́льчика", "ма́льчиков", "ма́льчике", "ма́льчиках", "ма́льчику", "ма́льчикам", "ма́льчиком", "ма́льчиками")
+#genCaseTable("к-कारांत संज्ञा", "tab:noun-endings-first-declension-hard-animate-male", "ма́льчик", "ма́льчикы", "ма́льчика", "ма́льчиков", "ма́льчика", "ма́льчиков", "ма́льчике", "ма́льчиках", "ма́льчику", "ма́льчикам", "ма́льчиком", "ма́льчиками")
 इसी प्रकार: сло́н (हाथी/हस्ति)
 
 === कोमल-अंत й पुलिंग शब्दों का रूप (निर्जीव वस्तु) <subsec:noun-endings-first-declension-y-inanimate-male>
-музе́й = म्‍यूजि़यम
-#gencasetable("й-कारांत संज्ञा", "tab:noun-endings-first-declension-y-inanimate-male", "музе́й", "музеи", "музей", "музеи", "музее", "музеях", "музею", "музеям", "музея", "музеев", "музеем", "музеями")
+музе́й = म्यूज़ियम
+#genCaseTable("й-कारांत संज्ञा", "tab:noun-endings-first-declension-y-inanimate-male", "музе́й", "музеи", "музей", "музеи", "музее", "музеях", "музею", "музеям", "музея", "музеев", "музеем", "музеями")
 
 === कोमल-अंत ь (мякий знак) पुलिंग शब्दों का रूप (निर्जीव वस्तु) <subsec:noun-endings-first-declension-b-inanimate-male>
 портфе́ль = ब्रीफ़केस / अटैची
-#gencasetable("ь-कारांत संज्ञा", "tab:noun-endings-first-declension-b-inanimate-male", "портфе́ль", "%Именительный
+#genCaseTable("ь-कारांत संज्ञा", "tab:noun-endings-first-declension-b-inanimate-male", "портфе́ль", "%Именительный
     портфе́ли", "портфе́ль", "%винительный
     портфе́ли", "портфе́ле", "%Предложный
     портфе́лях", "портфе́лю", "%Дательный
@@ -37,7 +37,7 @@
 
 === o--कारांत नपुंसकलिंग शब्दों का रूप <subsec:noun-endings-first-declension-o-neuter>
 кре́сло = कुर्सी
-#gencasetable("o-कारांत संज्ञा", "tab:noun-endings-first-declension-o-neuter", "кре́сло", "%Именительный
+#genCaseTable("o-कारांत संज्ञा", "tab:noun-endings-first-declension-o-neuter", "кре́сло", "%Именительный
     кре́сла", "кре́сло", "%винительный
     кре́сла", "кре́сле", "%Предложный
     кре́слах", "кре́слу", "%Дательный
@@ -50,7 +50,7 @@
 
 === е--कारांत नपुंसकलिंग शब्दों का रूप <subsec:noun-endings-first-declension-e-neuter>
 зда́ние = बिल्डिंग
-#gencasetable("е-कारांत संज्ञा", "tab:noun-endings-first-declension-e-neuter", "зда́ние", "%Именительный
+#genCaseTable("е-कारांत संज्ञा", "tab:noun-endings-first-declension-e-neuter", "зда́ние", "%Именительный
     зда́ния", "зда́ние", "%винительный
     зда́ния", "зда́нии", "%Предложный
     зда́ниях", "зда́нию", "%Дательный
@@ -64,7 +64,7 @@
 
 === ё--कारांत नपुंसकलिंग शब्दों का रूप <subsec:noun-endings-first-declension-yo-neuter>
 бельё = अंडरवियर (underwear)
-#gencasetable("ё-कारांत संज्ञा", "tab:noun-endings-first-declension-yo-neuter", "бельё", "%Именительный
+#genCaseTable("ё-कारांत संज्ञा", "tab:noun-endings-first-declension-yo-neuter", "бельё", "%Именительный
     Белья", "бельё", "%винительный
     Белья", "белье", "%Предложный
     Бельях", "белью", "%Дательный
