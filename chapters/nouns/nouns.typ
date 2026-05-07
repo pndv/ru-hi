@@ -25,12 +25,16 @@
     
 
 
-% TODO:
-% ~@franke2012
-% а + й = я
-% ь + а = я
-% й + у = ю
+/*
+    % TODO:
+    % ~@franke2012
+    % а + й = я
+    % ь + а = я
+    % й + у = ю
+*/
 #include "word-form-first.typ"
 #include "word-form-second.typ"
 #include "word-form-third.typ"
 #include "singular-plural-only-nouns.typ"
+
+#load-bib()

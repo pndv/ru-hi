@@ -6,3 +6,6 @@
   #include "pronunciation.typ"
   #include "spelling-rules.typ"
   #include "plurals.typ"
+
+#load-bib()
+

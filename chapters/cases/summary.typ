@@ -41,3 +41,5 @@
 ),
   caption: [कारक],
 ) <tab:case-summary-table>
+
+#load-bib()

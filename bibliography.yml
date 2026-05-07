@@ -1,0 +1,106 @@
+macdonald1926:
+  type: Book
+  title: "संस्कृत व्याकरण प्रवेशिका"
+  author:
+    name: MacDonald
+    given-name: Arthur A
+  translator:
+    name: द्विवेदी
+    given-name: कपिलदेव
+  publisher: "मोतीलाल बनारसीदास"
+  location: "Bangalow Rd, Jawahar Nagar, Delhi - 110007"
+  edition: 3
+  date: 1926
+  serial-number:
+    isbn: "978-81-208-2336-5"
+
+wade2011:
+  type: Book
+  title: A Comprehensive Russian Grammar
+  author: Terence Wade
+  publisher: Wiley-Blackwell
+  edition: 3
+  date: 2011
+  serial-number:
+    isbn: "978-1-4051-3639-6"
+
+levine2009:
+  type: Book
+  title: "Schaums outlines: Russian grammar"
+  author:
+    name: Levine
+    given-name: "James S."
+  publisher: McGraw-Hill
+  location: New York
+  edition: 2
+  date: 2009
+
+robin2012:
+  type: Book
+  title: "Golosa: A Basic Course In Russian [Book One]"
+  author:
+    - name: Robin
+      given-name: Richard
+    - name: Evans-Romaine
+      given-name: Karen
+    - name: Shatlina
+      given-name: Galina
+  publisher: Pearson
+  location: Boston
+  edition: 5
+  date: 2012
+  serial-number:
+    isbn: "978-0-205-74135-9"
+
+wolkonsky1961:
+  type: Book
+  title: Handbook of Russian Roots
+  author:
+    - name: Wolkonsky
+      given-name: "Catherine A."
+    - name: Poltoratzky
+      given-name: "Marianna A."
+  publisher: Columbia University Press
+  location: New York
+  date: 1961
+
+franke2012:
+  type: Book
+  title: The Big Silver Book Of Russian Verbs
+  author:
+    name: Franke
+    given-name: Jack
+  publisher: McGraw-Hill
+  location: New York
+  date: 2012
+
+readyruss2021:
+  type: Web
+  title: Ready Russian
+  organization: Ready Russian
+  date: 2017
+  url:
+    value: https://www.readyrussian.org
+    date: 2021-06-13
+
+kovalenko2015:
+  type: Web
+  title: "ы or и? Vowels. Part 2"
+  author:
+    name: Kovalenko
+    given-name: Yulia
+  date: 2015-07-03
+  url:
+    value: "https://www.youtube.com/watch?v=s6asiEL1f8U"
+    date: 2021-04-28
+
+guzeva2020:
+  type: Web
+  title: "ъ - What's the point of the Russian alphabet's most bizarre letter?"
+  author:
+    name: Guzeva
+    given-name: Alexandra
+  date: 2020-07-08
+  url:
+    value: https://www.rbth.com/education/332405-hard-sign-russian-letter
+    date: 2021-05-09

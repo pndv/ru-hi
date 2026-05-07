@@ -6,3 +6,5 @@
 == बहुवचनीय संज्ञा <sec:noun-plural-form-only>
 
 == एकवचनीय संज्ञा <sec:noun-singular-form-only>
+
+#load-bib()

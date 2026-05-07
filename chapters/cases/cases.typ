@@ -14,3 +14,5 @@
 #include "instrumental.typ"
 #include "ablative.typ"
 #include "summary.typ"
+
+#load-bib()

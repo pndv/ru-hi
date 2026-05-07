@@ -1,3 +1,5 @@
 #import "../template.typ": *
 
 = विशेषण <ch:adjective>
+
+#load-bib()

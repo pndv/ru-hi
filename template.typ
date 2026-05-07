@@ -35,10 +35,23 @@
   body
 }
 
-#let ruscursive(content) = {
+#let ruCursive(content) = {
   // Use a cursive font if available, otherwise it falls back correctly.
   set text(font: ("PT Serif", "Times New Roman", "Arial"), lang: "ru", style: "italic")
   content
+}
+
+// Conditional bibliography loader: avoids "multiple bibliographies" error
+// when compiling individual chapter files standalone.
+// Use load-bib(main: true) in main.typ, and load-bib() in chapter files.
+// Source: https://forum.typst.app/t/how-to-share-bibliography-in-a-multi-file-setup/1605
+#let load-bib(main: false) = {
+  counter("bibs").step()
+  context if main {
+    [#bibliography("bibliography.yml", title: [संदर्भसूची], style: "ieee") <main-bib>]
+  } else if query(<main-bib>) == () and counter("bibs").get().first() == 1 {
+    bibliography("bibliography.yml", title: [संदर्भसूची], style: "ieee")
+  }
 }
 
 #let genCaseTable(caption, fig_label, ..entries) = {

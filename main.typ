@@ -16,4 +16,4 @@
 #include "chapters/tenses.typ"
 #include "chapters/cases/cases.typ"
 
-#bibliography("bibliography.bib", title: [संदर्भसूची], style: "ieee")
+#load-bib(main: true)
