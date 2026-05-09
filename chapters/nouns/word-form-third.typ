@@ -1,7 +1,7 @@
 #import "../../template.typ": *
 
 == शब्दों के रूप (तृतीय प्रकार) <sec:noun-endings-third-declension-female>
-यह प्रकार स्त्रीलिंग शब्दों के लिए प्रयोग होता है, जिनका अंत ь (мякий знак) से होता हो। @readyruss2021 @levine2009
+यह प्रकार स्त्रीलिंग शब्दों के लिए प्रयोग होता है, जिनका अंत ь (мягкий знак) से होता हो। @readyruss2021 @levine2009
 
 === स्त्रीलिंग ь-कारांत शब्दों का रूप (निर्जीव वस्तु) <subsec:noun-endings-second-declension-hard-inanimate-female>
 жизнь = जीवन

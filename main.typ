@@ -2,7 +2,7 @@
 
 #show: project.with(
   title: "हिन्दी भाषियों के लिए रूसी अध्यन",
-  author: "Vinay Pandey",
+  author: "Vinay Pandey1",
 )
 
 #show heading.where(level: 1): it => {

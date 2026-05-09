@@ -22,7 +22,7 @@
 музе́й = म्यूज़ियम
 #genCaseTable("й-कारांत संज्ञा", "tab:noun-endings-first-declension-y-inanimate-male", "музе́й", "музеи", "музей", "музеи", "музее", "музеях", "музею", "музеям", "музея", "музеев", "музеем", "музеями")
 
-=== कोमल-अंत ь (мякий знак) पुलिंग शब्दों का रूप (निर्जीव वस्तु) <subsec:noun-endings-first-declension-b-inanimate-male>
+=== कोमल-अंत ь (мягкий знак) पुलिंग शब्दों का रूप (निर्जीव वस्तु) <subsec:noun-endings-first-declension-b-inanimate-male>
 портфе́ль = ब्रीफ़केस / अटैची
 #genCaseTable("ь-कारांत संज्ञा", "tab:noun-endings-first-declension-b-inanimate-male", "портфе́ль", "%Именительный
     портфе́ли", "портфе́ль", "%винительный
