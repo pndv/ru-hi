@@ -104,3 +104,31 @@ guzeva2020:
   url:
     value: https://www.rbth.com/education/332405-hard-sign-russian-letter
     date: 2021-05-09
+
+pande_rfi:
+  type: Book
+  title: Russian for Indians
+  author: Hem Chandra Pande
+  publisher: Indian Institute of Language Studies
+  date: 1994
+
+rishi_affinity:
+  type: Book
+  title: "India & Russia: Linguistic & Cultural Affinity"
+  author: W.R. Rishi
+  publisher: Roma Publications
+  date: 1982
+
+lekha_cognate:
+  type: Book
+  title: Cognate Words in Sanskrit and Russian
+  author: Indu Lekha
+  publisher: Pratibha Prakashan
+  date: 1993
+
+elizarenkova_style:
+  type: Book
+  title: Language and Style of the Vedic R̥ṣis
+  author: Tatyana Elizarenkova
+  publisher: SUNY Press
+  date: 1995

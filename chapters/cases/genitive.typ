@@ -1,6 +1,6 @@
 #import "../../template.typ": *
 
-== अधिकरण कारक (Родительный падеж) <sec:case-genitive>
+== संबंध कारक (Родительный падеж) <sec:case-genitive>
 Родительный падеж
 
 #load-bib()

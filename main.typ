@@ -15,5 +15,7 @@
 #include "chapters/pronoun.typ"
 #include "chapters/tenses.typ"
 #include "chapters/cases/cases.typ"
+#include "chapters/usage.typ"
+#include "chapters/glossary.typ"
 
 #load-bib(main: true)
