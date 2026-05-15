@@ -32,3 +32,7 @@ bibliography and citations, it is possible that they are missed in a few places,
 hope to correct them as I reach the final version.
 
 [Link to PDF](./main.pdf) -- To be fixed as soon as I figure out GitHub deployments.
+
+
+### Fonts
+- [Shobhika](https://github.com/Sandhi-IITBombay/Shobhika)

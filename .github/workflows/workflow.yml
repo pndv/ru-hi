@@ -12,7 +12,7 @@ jobs:
         uses: typst-community/setup-typst@v5
 
       - name: Compile Typst document
-        run: typst compile main.typ book.pdf
+        run: typst compile main.typ book.pdf --font-path=./fonts
 
       - name: Rename PDF with version
         if: github.event_name == 'release'
