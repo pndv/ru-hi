@@ -1,0 +1,26 @@
+name: workflow.yml
+on: push
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v5
+
+      - name: Compile Typst document
+        run: typst compile main.typ book.pdf
+
+      - name: Rename PDF with version
+        if: github.event_name == 'release'
+        run: |
+          mv main.pdf book-${{ github.ref_name }}.pdf
+
+      - name: Upload to Release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: book-${{ github.ref_name }}.pdf

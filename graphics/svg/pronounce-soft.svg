@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
- xmlns:dc="http://purl.org/dc/elements/1.1/"
- xmlns:cc="http://creativecommons.org/ns#"
- xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
  xmlns="http://www.w3.org/2000/svg"
- version="1.1"
  width="595.27557"
  height="841.88977"
  id="svg32"
  viewBox="0 0 595.27557 841.88977">
- <metadata
- id="metadata38">
- <rdf:RDF>
- <cc:Work
- rdf:about="">
- <dc:format>image/svg+xml</dc:format>
- <dc:type
- rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
- <dc:title/>
- </cc:Work>
- </rdf:RDF>
- </metadata>
  <defs
  id="defs36">
  <marker
@@ -35,10 +19,6 @@
  d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
  id="path4578"/>
  </marker>
- 
- 
- 
- 
  <marker
  style="overflow:visible;"
  id="marker4165"
@@ -65,117 +45,6 @@
  </marker>
  <marker
  style="overflow:visible"
- id="marker3889"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(-0.8)"
- style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
- d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
- id="path3887"/>
- </marker>
- <marker
- style="overflow:visible;"
- id="Arrow2Lend"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(1.1) rotate(180) translate(1,0)"
- d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
- style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
- id="path934"/>
- </marker>
- <marker
- style="overflow:visible;"
- id="marker3655"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(0.8) rotate(180) translate(12.5,0)"
- style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
- d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
- id="path3653"/>
- </marker>
- <marker
- style="overflow:visible;"
- id="marker3555"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(0.8) rotate(180) translate(12.5,0)"
- style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
- d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
- id="path3553"/>
- </marker>
- <marker
- style="overflow:visible"
- id="marker3467"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(0.8) translate(12.5,0)"
- style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
- d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
- id="path3465"/>
- </marker>
- <marker
- style="overflow:visible;"
- id="marker3373"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(0.8) rotate(180) translate(12.5,0)"
- style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
- d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
- id="path3371"/>
- </marker>
- <marker
- style="overflow:visible;"
- id="marker3291"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(0.8) rotate(180) translate(12.5,0)"
- style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
- d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
- id="path3289"/>
- </marker>
- <marker
- style="overflow:visible;"
- id="marker3077"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(0.4) rotate(180) translate(10,0)"
- style="fill-rule:evenodd;stroke:#0000e3;stroke-width:1pt;stroke-opacity:1;fill:#0000e3;fill-opacity:1"
- d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
- id="path3075"/>
- </marker>
- <marker
- style="overflow:visible;"
- id="Arrow1Mend"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(0.4) rotate(180) translate(10,0)"
- style="fill-rule:evenodd;stroke:#0000e0;stroke-width:1pt;stroke-opacity:1;fill:#0000e0;fill-opacity:1"
- d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
- id="path922"/>
- </marker>
- 
- 
- 
- <marker
- style="overflow:visible"
  id="marker1527"
  refX="0.0"
  refY="0.0"
@@ -186,63 +55,6 @@
  d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
  id="path1525"/>
  </marker>
- <marker
- style="overflow:visible"
- id="marker1345"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(-0.8)"
- style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
- d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
- id="path1343"/>
- </marker>
- <marker
- style="overflow:visible"
- id="TriangleInL"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(-0.8)"
- style="fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
- d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
- id="path1046"/>
- </marker>
- <marker
- style="overflow:visible"
- id="TriangleOutL"
- refX="0.0"
- refY="0.0"
- orient="auto">
- <path
- transform="scale(0.8)"
- style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
- d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
- id="path1055"/>
- </marker>
- 
- 
- 
- <rect
- x="443.84717"
- y="80.994009"
- width="59.935563"
- height="53.456046"
- id="rect74"/>
- <rect
- x="460.46216"
- y="203.88623"
- width="63.661352"
- height="47.863777"
- id="rect68"/>
- <rect
- x="451.29873"
- y="222.21308"
- width="21.763137"
- height="50.398843"
- id="rect62"/>
  <marker
  style="overflow:visible"
  id="marker1527-4"
@@ -256,7 +68,7 @@
  id="path1525-1"/>
  </marker>
  </defs>
- 
+
  <path
  d="m 317.02,106.1439 c 24.2005,25.471 63.79747,81.48495 78.79727,113.15385 21.9076,46.2532 -71.59167,-9.13655 -41.91207,42.47215 8.3764,14.5658 27.3566,54.356 7.1986,66.8945 -5.7427,3.5722 -9.2001,-0.5012 -11.8519,-7.1172 4.08836,-54.60224 -79.00848,-37.09445 -111.2596,-32.1667 -28.20116,5.0364 -68.3064,11.9486 -82.3572,24.5627 -19.44648,19.26787 -22.21204,27.45321 -37.2844,48.8985 -3.8432,5.5168 -16.8338,28.177 -16.1345,34.6839"
  style="fill:none;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
@@ -278,23 +90,17 @@
  style="fill:#ffffcc;fill-rule:evenodd;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
  id="path30"/>
  <text
- xml:space="preserve"
- id="text60"
- style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:Shobhika;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;"/>
- <text
- xml:space="preserve"
  id="text66"
  style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Shobhika;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;"
  transform="translate(-233.26274,165.22778)"><tspan
  x="460.46289"
- y="240.37993"><tspan>दाँत </tspan></tspan></text>
+ y="240.37993">दाँत </tspan></text>
  <text
- xml:space="preserve"
  id="text72"
  style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Shobhika;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;"
  transform="translate(59.935567,123.1109)"><tspan
  x="443.84766"
- y="117.48735"><tspan>होंठ </tspan></tspan></text>
+ y="117.48735">होंठ </tspan></text>
  <path
  style="fill:none;fill-opacity:1;stroke:#d4325d;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1527)"
  d="m 386.15242,311.94961 125.074,-56.95559 v 0"
@@ -304,7 +110,6 @@
  d="M 391.43094,382.703 C 500.81582,297.5511 528.97734,259.43175 528.78749,256.29762"
  id="path1503-6"/>
  <text
- xml:space="preserve"
  style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Shobhika;fill:#000000;fill-opacity:1;stroke:none"
  x="236.5025"
  y="110.15185"
@@ -313,7 +118,6 @@
  x="236.5025"
  y="110.15185">कठोर तालु</tspan></text>
  <text
- xml:space="preserve"
  style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Shobhika;fill:#000000;fill-opacity:1;stroke:none"
  x="312.6369"
  y="573.43756"
@@ -350,7 +154,6 @@
  id="layer2"
  style="display:inline"/>
  <text
- xml:space="preserve"
  style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:Shobhika;fill:#000000;fill-opacity:1;stroke:none"
  x="456.80621"
  y="110.15185"
@@ -371,7 +174,6 @@
  d="m 351.3124,390.2445 -72.69301,-7.95278"
  id="path189"/>
  <text
- xml:space="preserve"
  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;line-height:1.25;font-family:Shobhika;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
  x="40.3783"
  y="799.20911"
