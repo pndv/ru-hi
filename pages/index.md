@@ -35,4 +35,5 @@ hope to correct them as I reach the final version.
 
 
 ### Fonts
-- [Shobhika](https://github.com/Sandhi-IITBombay/Shobhika)
+- [Shobhika](https://github.com/Sandhi-IITBombay/Shobhika) (Hindi, Russian)
+- [Marck Script](https://fonts.google.com/share?selection.family=Marck+Script) (For cursive Russian)

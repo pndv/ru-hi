@@ -37,7 +37,7 @@
 
 #let ruCursive(content) = {
   // Use a cursive font if available, otherwise it falls back correctly.
-  set text(font: ("PT Serif", "Times New Roman", "Arial"), lang: "ru", style: "italic")
+  set text(font: ("Marck Script"), lang: "ru", style: "italic")
   content
 }
 
