@@ -57,7 +57,7 @@
 // The label is attached to the figure itself; in the LaTeX source it sat before
 // `\includegraphics`, which made `\ref` point at the enclosing section instead.
 #figure(
-  image("/graphics/svg/typst/pronounce-soft.svg", width: 60%),
+  image("/graphics/pronounce-soft.svg", width: 60%),
   caption: [#ru[ь] का उच्चारण],
 ) <fig:intro-pronounce-soft>
 
@@ -70,6 +70,6 @@
 उच्चारण के लिए #link("https://www.youtube.com/watch?v=s6asiEL1f8U")[यह विडिओ] #cite(<kovalenko2015>) देखिए।
 
 #figure(
-  image("/graphics/svg/typst/pronounce-oui.svg", width: 60%),
+  image("/graphics/pronounce-oui.svg", width: 60%),
   caption: [#ru[ы] का उच्चारण],
 ) <fig:intro-pronounce-oui>
