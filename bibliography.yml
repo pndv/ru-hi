@@ -1,0 +1,106 @@
+# Bibliography in Hayagriva format, converted from the BibTeX file the biblatex
+# build used. Citation keys are unchanged, so `@levine2009` and friends keep
+# working. Rendered by csl/hindi-numeric.csl, which supplies the Hindi terms
+# (संस्करण, अनुवादक, …) that hindi-ext.lbx used to provide.
+#
+# BibTeX -> Hayagriva mapping used here: @book -> book, @online -> web,
+# place/address -> publisher.location, accessed_on -> url.date, translator ->
+# affiliated (role: translator), isbn -> serial-number.isbn.
+
+macdonald1926:
+  type: book
+  title: संस्कृत व्याकरण प्रवेशिका
+  author: MacDonald, Arthur A.
+  affiliated:
+    - role: translator
+      names: द्विवेदी, कपिलदेव
+  edition: 3
+  publisher:
+    name: मोतीलाल बनारसीदास
+    location: Bangalow Rd, Jawahar Nagar, Delhi - 110007
+  date: 1926
+  serial-number:
+    isbn: 978-81-208-2336-5
+
+wade2011:
+  type: book
+  title: A Comprehensive Russian Grammar
+  author: Wade, Terence
+  edition: 3
+  publisher: Wiley-Blackwell
+  date: 2011
+  serial-number:
+    isbn: 978-1-4051-3639-6
+
+levine2009:
+  type: book
+  title: "Schaums outlines: Russian grammar"
+  author: Levine, James S.
+  edition: 2
+  publisher:
+    name: McGraw-Hill
+    location: New York
+  date: 2009
+
+robin2012:
+  type: book
+  title: "Golosa : A Basic Course In Russian [Book One]"
+  author:
+    - Robin, Richard
+    - Evans-Romaine, Karen
+    - Shatlina, Galina
+  edition: 5
+  publisher:
+    name: Pearson
+    location: Boston
+  date: 2012
+  serial-number:
+    isbn: 978-0-205-74135-9
+
+wolkonsky1961:
+  type: book
+  title: Handbook of Russian Roots
+  author:
+    - Wolkonsky, Catherine A.
+    - Poltoratzky, Marianna A.
+  publisher:
+    name: Columbia University Press
+    location: New York
+  date: 1961
+
+franke2012:
+  type: book
+  title: The Big Silver Book Of Russian Verbs
+  author: Franke, Jack
+  publisher:
+    name: McGraw-Hill
+    location: New York
+  date: 2012
+
+readyruss2021:
+  type: web
+  title: Ready Russian
+  date: 2017
+  url:
+    value: https://www.readyrussian.org
+    date: 2021-06-13
+
+# Title held `\ru{ы} or \ru{и}?` in BibTeX; the macros become plain UTF-8 here.
+kovalenko2015:
+  type: web
+  title: ы or и? Vowels. Part 2
+  author: Kovalenko, Yulia
+  date: 2015-07-03
+  url:
+    value: https://www.youtube.com/watch?v=s6asiEL1f8U
+    date: 2021-04-28
+
+# Title held `\ru{ъ} - What's the point…` in BibTeX.
+guzeva2020:
+  type: web
+  title: "ъ - What's the point of the Russian alphabet's most bizarre letter?"
+  author: Guzeva, Alexandra
+  date: 2020-07-08
+  url:
+    value: https://www.rbth.com/education/332405-hard-sign-russian-letter
+    date: 2021-05-09
