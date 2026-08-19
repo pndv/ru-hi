@@ -23,6 +23,8 @@ jobs:
 
       - name: Setup Typst
         uses: typst-community/setup-typst@v5
+        with:
+          cache-local-packages: true #todo: setup requirements.json for required packages
 
       - name: Compile Document
         run: typst compile --font-path ./fonts --ignore-system-fonts --pretty main.typ ru-hi.pdf
